@@ -9,7 +9,7 @@
     "postinstall": "tsc",
     "watch-node": "nodemon build/index.js",
     "watch-ts": "tsc -w",
-    "deploy": "git push heroku master"
+    "deploy": "npm run build && git push heroku master"
   },
   "author": "",
   "license": "ISC",
