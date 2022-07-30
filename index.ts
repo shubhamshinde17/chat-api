@@ -11,7 +11,6 @@ const io = new Server(server);
 app.use(express.json());
 app.use(cors());
 app.use(userRouter);
-app.listen(process.env.PORT || 3000)
 
 connect();
 
@@ -31,6 +30,6 @@ io.on('connection', (socket) => {
     })
 });
 
-server.listen(3000, () => {
+app.listen(3000, () => {
     console.log('listening on http://localhost:3000');
 });
