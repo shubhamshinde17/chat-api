@@ -11,6 +11,7 @@ const io = new Server(server);
 app.use(express.json());
 app.use(cors());
 app.use(userRouter);
+app.listen(process.env.PORT || 3000)
 
 connect();
 
