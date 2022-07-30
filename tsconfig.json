@@ -1,20 +1,12 @@
 {
-    "include": [
-        "./src/**/*"
-    ],
-    "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
-    ],
+    "include": ["src/**/*"],
     "compilerOptions": {
-        "target": "es6",
+        "target": "es2016",
         "module": "commonjs",
-        "rootDir": "./",
         "outDir": "./build",
         "esModuleInterop": true,
-        "strict": true
-    },
-    "files": [
-        "index.ts"
-    ]
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true
+    }
 }
